@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+<% @schools.each do |school| %>
+<div class="col-md-3">
+
+<div class="thumbnail">
+
+<%= image_tag  school.image.url %>
+
+<div class="caption">
+
+<strong><%= school.name_of_the_school %></strong><br>
+<%= school.address %><hr>
+       <%= link_to 'Show', school, class: "btn btn-link" %>
+        <%= link_to 'Edit', edit_school_path(school), class: "btn btn-link" %>
+        <%= link_to 'Destroy', school, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %>
+  
+       
+</div>
+</div>
+        
+</div>
+<% end %>
+
+</div>
+
+<br>
+
+<%= link_to 'New School', new_school_path, class: "btn btn-link" %>

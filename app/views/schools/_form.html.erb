@@ -1,0 +1,67 @@
+<%= form_for(@school, :html => { :multipart => true}) do |f| %>
+  <% if school.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(school.errors.count, "error") %> prohibited this school from being saved:</h2>
+
+      <ul>
+      <% school.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :name_of_the_school %>
+    <%= f.text_field :name_of_the_school, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :board %>
+    <%= f.text_field :board, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :type %>
+    <%= f.text_field :typ, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :name_of_the_principal %>
+    <%= f.text_field :name_of_the_principal, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :address %>
+    <%= f.text_area :address, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :contact_person %>
+    <%= f.text_field :contact_person, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :contact_number %>
+    <%= f.text_field :contact_number, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :email %>
+    <%= f.text_field :email, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :website %>
+    <%= f.text_field :website, class: "form-control" %>
+  </div>
+
+<div class="form-group">
+    <%= f.label :image %>
+    <%= f.file_field :image, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.submit class: "btn btn-primary" %>
+  </div>
+<% end %>
