@@ -1,4 +1,40 @@
-<p id="notice"><%= notice %></p>
+
+
+ <div class="banner">
+
+      <div class="bg-color">
+     <font color="white"> <p id="notice"><%= notice %></p>
+        <div class="container">
+          <div class="row">
+            <div class="banner-text text-center">
+              <div class="text-border">
+                <h2 class="text-dec">trackSchools</h2>
+              </div>
+              <div class="intro-para text-center quote">
+                <p class="big-text">Verified Schools Information For Your Ease</p>
+                <p class="small-text">We are the only portal in India where all the school informations are verified by our physical data handlers.</p>
+                <a href="/pages/contact" class="btn">GET LISTED</a>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <br>
+    <section id ="feature" class="section-padding">
+    <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h2>Best Featured Schools</h2>
+            
+            <hr class="bottom-line">
+          </div>
+          </div>
+
+<div class="container">
+<div class="row">
 <% @schools.each do |school| %>
 <div class="col-md-3">
 
@@ -11,8 +47,10 @@
 <strong><%= school.name_of_the_school %></strong><br>
 <%= school.address %><hr>
        <%= link_to 'Show', school, class: "btn btn-link" %>
+       <% if user_signed_in? && current_user.admin? %>
         <%= link_to 'Edit', edit_school_path(school), class: "btn btn-link" %>
         <%= link_to 'Destroy', school, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %>
+        <% end %>
   
        
 </div>
@@ -24,9 +62,13 @@
 </div>
 
 <br>
+<%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
+<br>
 
 <% if user_signed_in? && current_user.admin? %>
 
-<%= link_to 'New School', new_school_path, class: "btn btn-link" %>
+<%= link_to 'New School', new_school_path, class: "btn btn-primary" %>
 
 <% end %>
+</div>
+</div>

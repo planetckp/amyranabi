@@ -41,7 +41,9 @@ gem "paperclip", "~> 4.2"
 gem 'paperclip-dropbox', '>= 1.2.1'
 gem "figaro"
 gem 'devise'
-
+gem 'will_paginate', '~> 3.1.0'
+gem 'will_paginate-bootstrap'
+gem 'bcrypt', '~> 3.1.7'
 
 
 group :production do

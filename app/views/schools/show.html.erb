@@ -46,6 +46,7 @@
   <strong>Website:</strong>
   <%= @school.website %>
 </p>
-
-<%= link_to 'Edit', edit_school_path(@school), class: "btn btn-link" %> |
+<% if user_signed_in? && current_user.admin? %>
+<%= link_to 'Edit', edit_school_path(@school), class: "btn btn-link" %>
+<% end %> |
 <%= link_to 'Back', schools_path, class: "btn btn-link" %>
