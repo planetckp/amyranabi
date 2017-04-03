@@ -46,7 +46,9 @@
 
 <strong><%= school.name_of_the_school %></strong><br>
 <%= school.address %><hr>
-       <%= link_to 'Show', school, class: "btn btn-link" %>
+       <%= link_to 'Show', school, class: "btn btn-primary" %>
+     <div class="pull-right"><strong>Verified</div></strong>
+
        <% if user_signed_in? && current_user.admin? %>
         <%= link_to 'Edit', edit_school_path(school), class: "btn btn-link" %>
         <%= link_to 'Destroy', school, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %>

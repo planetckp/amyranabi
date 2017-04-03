@@ -7,6 +7,8 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+
   </head>
 
   <body>
@@ -19,5 +21,18 @@
   <p class="alert"><%= alert %></p>
   
     <%= yield %>
+
+    <%= render 'layouts/footer'%>
+
   </body>
+
+  
+<script>
+    $(document).ready(function(){
+      $(".fadeIn").click(function(){
+      $("div.row2").fadeIn();
+      $("button.fadeIn").hide();
+      });
+    });
+  </script>
 </html>

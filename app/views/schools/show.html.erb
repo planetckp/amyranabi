@@ -1,6 +1,15 @@
-<p id="notice"><%= notice %></p>
 
-<%= image_tag @school.image.url(:medium) %>
+<br><p id="notice"><%= notice %></p>
+
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+
+
+<%= image_tag @school.image.url(:large), class:"img-responsive" %>
+
+
+<p>
 
 <p>
   <strong>Name of the school:</strong>
@@ -13,7 +22,7 @@
 </p>
 
 <p>
-  <strong>Typ:</strong>
+  <strong>Type:</strong>
   <%= @school.typ %>
 </p>
 
@@ -50,3 +59,8 @@
 <%= link_to 'Edit', edit_school_path(@school), class: "btn btn-link" %>
 <% end %> |
 <%= link_to 'Back', schools_path, class: "btn btn-link" %>
+
+</div>
+</div>
+</div>
+</div>

@@ -9,7 +9,7 @@ class SchoolsController < ApplicationController
   # GET /schools
   # GET /schools.json
   def index
-    @schools = School.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 4)
+    @schools = School.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 20)
   end
 
   # GET /schools/1

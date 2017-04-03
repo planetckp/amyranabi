@@ -1,4 +1,6 @@
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 * {
   border-radius: 0 !important;
@@ -22,13 +24,13 @@ body {
 Banner
 ************************************/
 .banner{
-	background: url('https://dl.dropboxusercontent.com/s/epqeyf6w5por3db/biigcity.jpg') no-repeat center top;
+	background: url('https://dl.dropboxusercontent.com/s/vo8qb48zb9b5nba/SM438888.jpg?dl=0') no-repeat center top;
     background-size: cover;
 	min-height: 480px;
     position: relative;
 }
 .bg-color{
-	background-color: RGBA(12, 11, 11, 0.82);
+	background-color: RGBA(12, 11, 11, 0.75);
 	min-height: 480px;
 }
 .text-dec{
@@ -165,3 +167,105 @@ h2{
     height: 3px;
     background-color: rgb(99, 122, 145);
 }
+
+
+
+
+
+ .sidenav{
+    color: #767676;
+    display: block;
+    font-size: 16px;
+    padding: 6px 0;
+}
+
+a:link{text-decoration:none;}
+
+a:hover{color: #767676;
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.team-member img {
+  margin: 0 auto;
+  border: 7px solid white;
+}
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+.team-member p {
+  margin-top: 0;
+}
+
+.text-muted {
+  color: #777777;
+}
+.text-primary {
+  color: #fed136;
+}
+
+
+
+.img-circle {
+    border-radius: 50% !important;
+}
+
+/***************************************
+footer
+***************************************/
+#footer{
+  background-color:#29302E;
+}
+.ftr-tle {
+    height: 50px;
+}
+.info-sec {
+    color: #fff;
+}
+.quick-info li i {
+    font-size: 8px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: left;
+}
+.social-icon li {
+    float: left;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 5px;
+}
+.bglight-blue {
+    background-color: #3498DB;
+}
+.bgred {
+    background-color: #E74C3C;
+}
+.bgdark-blue {
+    background-color: #2C3E50;
+}
+.bglight-blue {
+    background-color: #3498DB;
+}
+.top-footer {
+    padding: 40px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.footer-line {
+    padding: 30px 0px;
+    color: #fff;
+}
+
+.footer-line a {
+    color: #0CB8B6;
+}
+.white, .white:hover, .white:focus
+{
+  color: #fff;
+  width: 100% !important;}
