@@ -33,7 +33,6 @@
 
 <p>
   <strong>Address:</strong>
-  <p style="white-space: pre-line;">
   <%= @school.address %>
 </p>
 
@@ -58,7 +57,7 @@
 </p>
 <% if user_signed_in? && current_user.admin? %>
 <%= link_to 'Edit', edit_school_path(@school), class: "btn btn-link" %>
-<% end %> |
+<% end %> 
 <%= link_to 'Back', schools_path, class: "btn btn-link" %>
 
 </div>

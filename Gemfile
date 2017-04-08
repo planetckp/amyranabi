@@ -45,6 +45,7 @@ gem 'will_paginate', '~> 3.1.0'
 gem 'will_paginate-bootstrap'
 gem 'bcrypt', '~> 3.1.7'
 gem 'font-awesome-sass', '~> 4.6', '>= 4.6.2'
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
 
 group :production do

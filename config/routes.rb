@@ -2,9 +2,10 @@ Rails.application.routes.draw do
   devise_for :users
   devise_for :views
   resources :schools
-  get 'pages/about'
+  resources :contacts, only: [:new, :create] 
 
-  get 'pages/contact'
+
+  get 'pages/about'
 
   get 'pages/team'
 

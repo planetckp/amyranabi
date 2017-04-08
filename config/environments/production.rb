@@ -76,6 +76,19 @@ Rails.application.configure do
  # Required For Devise gem.Remember to change  localhost:3000 to actual application host
  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
+ config.action_mailer.default_url_options = { host: 'https://ts17.herokuapp.com/' }
+ config.action_mailer.delivery_method = :smtp
+
+ ActionMailer::Base.smtp_settings = {
+  :user_name => ENV['SENDGRID_USERNAME'],
+  :password => ENV['SENDGRID_PASSWORD'],
+  :domain => 'heroku.com',
+  :address => 'smtp.sendgrid.net',
+  :port => 587,
+  :authentication => :plain,
+  :enable_starttls_auto => true
+}
+end
 
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
