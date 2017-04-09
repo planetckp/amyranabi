@@ -17,7 +17,7 @@ end
 
  validates :name_of_the_principal, :board, :typ, :name_of_the_principal, :address, :contact_person, :contact_number, :email, :website, presence: true 
  validates :contact_number,  :numericality => true
- validates_length_of :contact_number, :maximum => 10
+ validates_length_of :contact_number, :maximum => 12
  validates_length_of :contact_number, :minimum => 10
  validates_attachment_presence :image
 end
