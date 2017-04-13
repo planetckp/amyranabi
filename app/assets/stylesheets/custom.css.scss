@@ -13,11 +13,10 @@ body {
 
   }
 
- 
-
-.navbar {
-	margin-bottom: -52px;
+ .navbar {
+border-bottom: 2px solid rgba(255,255,255,0);
 }
+
 
 .col-md-3:nth-child(4n+1) {
   clear: left;
@@ -28,6 +27,7 @@ body {
 Banner
 ************************************/
 .banner{
+
 	background: url('https://dl.dropboxusercontent.com/s/54rm8e5barpnj4p/track.jpg?dl=0') no-repeat center top;
     background-size: cover;
 	min-height: 480px;
@@ -317,3 +317,5 @@ Price Table
     font-size: 14px;
     background-color: #5fcf80;
 }
+
+
