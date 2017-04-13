@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :schools
   resources :contacts, only: [:new, :create, ] 
 
- 
+  
 
   get 'pages/about'
 
